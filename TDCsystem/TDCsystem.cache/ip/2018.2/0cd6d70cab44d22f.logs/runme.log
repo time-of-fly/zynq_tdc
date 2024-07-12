@@ -1,0 +1,1572 @@
+
+*** Running vivado
+    with args -log TDCsystem_AXITDC_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TDCsystem_AXITDC_1_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source TDCsystem_AXITDC_1_0.tcl -notrace
+Command: synth_design -top TDCsystem_AXITDC_1_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14304 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 453.020 ; gain = 102.215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TDCsystem_AXITDC_1_0' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/synth/TDCsystem_AXITDC_1_0.vhd:119]
+	Parameter NTaps bound to: 192 - type: integer 
+INFO: [Synth 8-3491] module 'AXITDC' declared at 'f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/AXITDC.vhd:29' bound to instance 'U0' of component 'AXITDC' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/synth/TDCsystem_AXITDC_1_0.vhd:258]
+INFO: [Synth 8-638] synthesizing module 'AXITDC' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/AXITDC.vhd:105]
+	Parameter NTaps bound to: 192 - type: integer 
+INFO: [Synth 8-3491] module 'axi_gpio_0' declared at 'f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/synth/axi_gpio_0.vhd:59' bound to instance 'AXI_control' of component 'axi_gpio_0' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/AXITDC.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio_0' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/synth/axi_gpio_0.vhd:85]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 2 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 1 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 1 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/synth/axi_gpio_0.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 2 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 1 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
+	Parameter C_IS_DUAL bound to: 1 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1295]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1296]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000111111111 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 9 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b00 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b01 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b10 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 2 - type: integer 
+	Parameter C_BAR bound to: 2'b11 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+	Parameter C_DW bound to: 32 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 2 - type: integer 
+	Parameter C_MAX_GPIO_WIDTH bound to: 2 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT bound to: -1 - type: integer 
+	Parameter C_IS_DUAL bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
+	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-226] default block is never used [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:835]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 0 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT1_ND_G2.READ_REG2_GEN[0].GPIO2_DBus_i_reg was removed.  [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:787]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT1_ND_G2.READ_REG2_GEN[1].GPIO2_DBus_i_reg was removed.  [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:787]
+WARNING: [Synth 8-6014] Unused sequential element Dual.gpio2_Data_In_reg was removed.  [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:920]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio_0' (8#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/synth/axi_gpio_0.vhd:85]
+INFO: [Synth 8-3491] module 'axi_bram_ctrl_0' declared at 'f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:59' bound to instance 'AXI_memory' of component 'axi_bram_ctrl_0' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/AXITDC.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_0' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:108]
+	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
+	Parameter C_MEMORY_DEPTH bound to: 4096 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_SELECT_XPM bound to: 1 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:23737' bound to instance 'U0' of component 'axi_bram_ctrl' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:262]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:23907]
+	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
+	Parameter C_MEMORY_DEPTH bound to: 4096 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_SELECT_XPM bound to: 1 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:22907]
+	Parameter C_BRAM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'full_axi' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:21852]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+	Parameter C_ENABLE_AXI_CTRL_REG_IF bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+INFO: [Synth 8-3919] null assignment ignored [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:21920]
+INFO: [Synth 8-638] synthesizing module 'sng_port_arb' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:9219]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sng_port_arb' (9#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:9219]
+INFO: [Synth 8-638] synthesizing module 'wr_chnl' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:17016]
+	Parameter C_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_NARROW bound to: 0 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-506] null port 'FaultInjectECC' ignored [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:16983]
+INFO: [Synth 8-638] synthesizing module 'wrap_brst' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:10218]
+	Parameter C_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'wrap_brst' (10#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:10218]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:133]
+	Parameter C_DATA_BITS bound to: 12 - type: integer 
+	Parameter C_DEPTH bound to: 8 - type: integer 
+	Parameter C_XON bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'FDR' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3953' bound to instance 'Data_Exists_DFF' of component 'FDR' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:230]
+INFO: [Synth 8-6157] synthesizing module 'FDR' [F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3953]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDR' (11#1) [F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3953]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26641' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:247]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY_L' [F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26641]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY_L' (12#1) [F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26641]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:52723' bound to instance 'XORCY_I' of component 'XORCY' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:254]
+INFO: [Synth 8-6157] synthesizing module 'XORCY' [F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:52723]
+INFO: [Synth 8-6155] done synthesizing module 'XORCY' (13#1) [F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:52723]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966' bound to instance 'FDRE_I' of component 'FDRE' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:260]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (14#1) [F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26641' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:52723' bound to instance 'XORCY_I' of component 'XORCY' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966' bound to instance 'FDRE_I' of component 'FDRE' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26641' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:52723' bound to instance 'XORCY_I' of component 'XORCY' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966' bound to instance 'FDRE_I' of component 'FDRE' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26641' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:52723' bound to instance 'XORCY_I' of component 'XORCY' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:3966' bound to instance 'FDRE_I' of component 'FDRE' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:271]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (15#1) [F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:271]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'F:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:50711' bound to instance 'SRL16E_I' of component 'SRL16E' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:271]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (16#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:133]
+WARNING: [Synth 8-6014] Unused sequential element curr_awsize_reg_reg was removed.  [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:18172]
+WARNING: [Synth 8-6014] Unused sequential element curr_awlen_reg_1_or_2_reg was removed.  [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:18449]
+INFO: [Synth 8-256] done synthesizing module 'wr_chnl' (17#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:17016]
+INFO: [Synth 8-638] synthesizing module 'rd_chnl' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:11498]
+	Parameter C_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_NARROW bound to: 0 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element curr_arsize_reg_reg was removed.  [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:12641]
+WARNING: [Synth 8-6014] Unused sequential element no_ar_ack_reg was removed.  [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:14982]
+WARNING: [Synth 8-6014] Unused sequential element do_cmplt_burst_reg was removed.  [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:16034]
+WARNING: [Synth 8-6014] Unused sequential element axi_arsize_pipe_max_reg was removed.  [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:12181]
+INFO: [Synth 8-256] done synthesizing module 'rd_chnl' (18#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:11498]
+INFO: [Synth 8-256] done synthesizing module 'full_axi' (19#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:21852]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (20#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:22907]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (21#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/hdl/axi_bram_ctrl_v4_0_rfs.vhd:23907]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_0' (22#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_bram_ctrl_0/synth/axi_bram_ctrl_0.vhd:108]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:59' bound to instance 'BRAM' of component 'blk_mem_gen_0' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/AXITDC.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:78]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 1 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 8 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_0.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 1 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 4 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 4096 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 4096 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_RSTB bound to: 1 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 1 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 8 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 64 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 64 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 2048 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 2048 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 4 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     20.9432 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/blk_mem_gen_0/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:251]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (33#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'TDCchannel' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/TDCchannel.vhd:60]
+	Parameter NTaps bound to: 192 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delayLine' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:42]
+	Parameter NTaps bound to: 192 - type: integer 
+INFO: [Synth 8-113] binding component instance 'firstCarry' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:88]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CARRY4_inst' to cell 'CARRY4' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'risingEdgeDetector' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/risingEdgeDetector.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'risingEdgeDetector' (34#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/risingEdgeDetector.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'delayLine' (35#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/delayLine.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'encoder' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:43]
+	Parameter NTaps bound to: 192 - type: integer 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst1' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:75]
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst2' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:89]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'LUT6_inst0' to cell 'LUT6' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:61]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter INIT bound to: 64'b1000000100010111000101110111111000010111011111100111111011101000 
+	Parameter INIT bound to: 64'b1111111011101000111010001000000011101000100000001000000000000000 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 32 - type: integer 
+	Parameter BITS bound to: 3 - type: integer 
+	Parameter LEVEL bound to: 5 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy__parameterized0' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 16 - type: integer 
+	Parameter BITS bound to: 4 - type: integer 
+	Parameter LEVEL bound to: 4 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy__parameterized1' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 8 - type: integer 
+	Parameter BITS bound to: 5 - type: integer 
+	Parameter LEVEL bound to: 3 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy__parameterized2' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 4 - type: integer 
+	Parameter BITS bound to: 6 - type: integer 
+	Parameter LEVEL bound to: 2 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adderTreeLegacy__parameterized3' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/adderTreeLegacy.vhd:48]
+	Parameter INPUTS bound to: 2 - type: integer 
+	Parameter BITS bound to: 7 - type: integer 
+	Parameter LEVEL bound to: 1 - type: integer 
+	Parameter Y_OUT_LEN bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy__parameterized3' (36#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy__parameterized2' (36#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy__parameterized1' (36#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy__parameterized0' (36#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'adderTreeLegacy' (36#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/adderTreeLegacy.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'encoder' (37#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/encoder.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'counter' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/counter.vhd:35]
+	Parameter BITS bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (38#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/counter.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'control' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/control.vhd:51]
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'control' (39#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/control.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'TDCchannel' (40#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/TDCchannel.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'sync' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/sync.vhd:37]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'sync' (41#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/sync.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'AXITDC' (42#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ipshared/1e6d/src/AXITDC.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'TDCsystem_AXITDC_1_0' (43#1) [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/synth/TDCsystem_AXITDC_1_0.vhd:119]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port MEM_REG_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port MEM_REGCE
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port SBITERRIN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port SBITERRIN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port SBITERRIN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port SBITERRIN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port SBITERRIN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port SBITERRIN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port SBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port SBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port DBITERRIN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port DBITERRIN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port DBITERRIN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port DBITERRIN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port DBITERRIN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port DBITERRIN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port DBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port DBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_mux has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized2 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized2 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized2 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized2 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized2 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized2 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized1 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized1 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized1 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized1 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized1 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized1 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized0 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized0 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized0 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized0 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized0 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized0 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_generic_cstr has unconnected port RSTB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_generic_cstr has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_gen_generic_cstr has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_output_block has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_output_block has unconnected port SBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_output_block has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_output_block has unconnected port RDADDRECC_I[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_output_block has unconnected port RDADDRECC_I[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_output_block has unconnected port RDADDRECC_I[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_1_blk_mem_output_block has unconnected port RDADDRECC_I[7]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 823.422 ; gain = 472.617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 823.422 ; gain = 472.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 823.422 ; gain = 472.617
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 85 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/axi_gpio_0.xdc] for cell 'U0/AXI_control/U0'
+Finished Parsing XDC File [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/axi_gpio_0.xdc] for cell 'U0/AXI_control/U0'
+Parsing XDC File [F:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.runs/TDCsystem_AXITDC_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.runs/TDCsystem_AXITDC_1_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.runs/TDCsystem_AXITDC_1_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TDCsystem_AXITDC_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TDCsystem_AXITDC_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 29 instances were transformed.
+  FDR => FDRE: 25 instances
+  MUXCY_L => MUXCY: 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 852.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 852.035 ; gain = 501.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 852.035 ; gain = 501.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0/BRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/AXI_memory. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/AXI_control. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/AXI_control/U0. (constraint file  F:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.runs/TDCsystem_AXITDC_1_0_synth_1/dont_touch.xdc, line 21).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 852.035 ; gain = 501.230
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_bresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "max_wrap_burst" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "max_wrap_burst" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "max_wrap_burst" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wrap_burst_total_cmb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wrap_burst_total_cmb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wrap_burst_total_cmb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "buffer_Empty" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "buffer_Full" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_WDATA_SM_NO_ECC_SNG_REG_WREADY.wr_data_sng_sm_cs_reg' in module 'wr_chnl'
+INFO: [Synth 8-5544] ROM "curr_wrap_burst" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "curr_fixed_burst" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bram_addr_rst_cmb" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_data_sng_sm_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'rd_data_sm_cs_reg' in module 'rd_chnl'
+INFO: [Synth 8-802] inferred FSM for state register 'rlast_sm_cs_reg' in module 'rd_chnl'
+INFO: [Synth 8-5544] ROM "curr_wrap_burst" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "curr_fixed_burst" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "axi_rd_burst_two" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "set_last_bram_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "axi_rvalid_set_cmb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_data_sm_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_data_sm_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_data_sm_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_data_sm_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_data_sm_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rlast_sm_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'arb_sm_cs_reg' in module 'sng_port_arb'
+INFO: [Synth 8-5544] ROM "arb_sm_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "DLenable" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rdy" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+            brst_wr_data |                              010 |                               10
+             sng_wr_data |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GEN_WDATA_SM_NO_ECC_SNG_REG_WREADY.wr_data_sng_sm_cs_reg' using encoding 'one-hot' in module 'wr_chnl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                sng_addr |                             0001 |                             0001
+                sec_addr |                             0010 |                             0010
+               full_pipe |                             0011 |                             0011
+           full_throttle |                             0100 |                             0100
+               last_addr |                             0101 |                             0101
+           last_throttle |                             0110 |                             0110
+               last_data |                             0111 |                             0111
+       last_data_ar_pend |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_data_sm_cs_reg' using encoding 'sequential' in module 'rd_chnl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+          w8_throttle_b2 |                              001 |                              100
+             w8_throttle |                              010 |                              001
+        w8_2nd_last_data |                              011 |                              010
+            w8_last_data |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rlast_sm_cs_reg' using encoding 'sequential' in module 'rd_chnl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                 wr_data |                               01 |                               10
+                 rd_data |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'arb_sm_cs_reg' using encoding 'sequential' in module 'sng_port_arb'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+*
+                    idle |                              001 |                              001
+                   clear |                              010 |                              100
+                clr_done |                              011 |                              101
+                 running |                              100 |                              010
+                run_done |                              101 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 852.035 ; gain = 501.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 17    
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	              192 Bit    Registers := 2     
+	               96 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 6     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 135   
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   6 Input     32 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 7     
+	   2 Input     11 Bit        Muxes := 1     
+	   6 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 15    
+	   9 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 9     
+	   4 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 70    
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 17    
+	   9 Input      1 Bit        Muxes := 19    
+	   5 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pselect_f 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module pselect_f__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module address_decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module slave_attachment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module GPIO_Core 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module axi_gpio 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module wrap_brst 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     12 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module SRL_FIFO 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module wr_chnl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 42    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 7     
+Module rd_chnl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 56    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 25    
+	   3 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 19    
+	   5 Input      1 Bit        Muxes := 2     
+Module sng_port_arb 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 9     
+Module full_axi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module blk_mem_gen_v8_4_1_bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module blk_mem_gen_v8_4_1_blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module blk_mem_gen_v8_4_1_blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module risingEdgeDetector 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module delayLine 
+Detailed RTL Component Info : 
++---Registers : 
+	              192 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module adderTreeLegacy__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adderTreeLegacy__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adderTreeLegacy__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 4     
++---Registers : 
+	               40 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adderTreeLegacy__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 8     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adderTreeLegacy 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 16    
++---Registers : 
+	               96 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module encoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   6 Input     11 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1684]
+WARNING: [Synth 8-6014] Unused sequential element bus2ip_reset_reg was removed.  [f:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.srcs/sources_1/bd/TDCsystem/ip/TDCsystem_AXITDC_1_0/src/axi_gpio_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1684]
+INFO: [Synth 8-5546] ROM "U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/axi_rd_burst_two" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U0/TDC/control/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_e_reg[0]' (FD) to 'U0/TDC/control/we_e_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_e_reg[1]' (FD) to 'U0/TDC/control/we_e_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_e_reg[2]' (FD) to 'U0/TDC/control/we_e_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_e_reg[3]' (FD) to 'U0/TDC/control/we_e_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_e_reg[4]' (FD) to 'U0/TDC/control/we_e_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_e_reg[5]' (FD) to 'U0/TDC/control/we_e_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_e_reg[6]' (FD) to 'U0/TDC/control/we_e_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_reg[0]' (FD) to 'U0/TDC/control/we_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_reg[1]' (FD) to 'U0/TDC/control/we_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_reg[2]' (FD) to 'U0/TDC/control/we_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_reg[3]' (FD) to 'U0/TDC/control/we_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_reg[4]' (FD) to 'U0/TDC/control/we_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_reg[5]' (FD) to 'U0/TDC/control/we_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/TDC/control/we_reg[6]' (FD) to 'U0/TDC/control/we_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[29]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[28]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[27]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[26]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[25]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[24]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[23]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[22]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[21]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[20]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[19]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[18]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[17]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[16]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[15]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[14]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[13]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[12]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[11]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[10]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[9]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[8]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[7]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[6]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[5]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[4]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[3]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[2]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[1]' (FDR) to 'U0/AXI_control/U0/ip2bus_data_i_D1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AXI_control /U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AXI_control /U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[2]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[3]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[4]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[5]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[6]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[7]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[8]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[9]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[10]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[11]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[12]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[13]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[14]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[15]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[16]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[17]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[18]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[19]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[20]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[21]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[22]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[23]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[24]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[25]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[26]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[27]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[28]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[29]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[30]' (FDRE) to 'U0/AXI_control/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AXI_control /U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AXI_control /U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[0].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[1].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[1]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[7]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[6]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[5]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[4]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[1]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[0]) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AXI_memory /\U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/axi_b2b_brst_reg )
+INFO: [Synth 8-3886] merging instance 'U0/AXI_memory/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_RRESP.axi_rresp_int_reg[0]' (FDRE) to 'U0/AXI_memory/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_RRESP.axi_rresp_int_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AXI_memory /\U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_RRESP.axi_rresp_int_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/AXI_memory/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_BRESP.axi_bresp_int_reg[0]' (FDRE) to 'U0/AXI_memory/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_BRESP.axi_bresp_int_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AXI_memory /\U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_BRESP.axi_bresp_int_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_BRESP.axi_bresp_int_reg[1]) is unused and will be removed from module axi_bram_ctrl_0.
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/axi_b2b_brst_reg) is unused and will be removed from module axi_bram_ctrl_0.
+INFO: [Synth 8-3332] Sequential element (U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_RRESP.axi_rresp_int_reg[1]) is unused and will be removed from module axi_bram_ctrl_0.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/has_mux_b.B/no_softecc_norm_sel2.has_mem_regs.WITHOUT_ECC_PIPE.ce_pri.sel_pipe_d1_reg[0]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 852.035 ; gain = 501.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 861.145 ; gain = 510.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 862.113 ; gain = 511.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 883.879 ; gain = 533.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 883.879 ; gain = 533.074
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 883.879 ; gain = 533.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 883.879 ; gain = 533.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 883.879 ; gain = 533.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 883.879 ; gain = 533.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 883.879 ; gain = 533.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------------+-----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name          | RTL Name                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------------+-----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|TDCsystem_AXITDC_1_0 | U0/TDC/encoder/validOut_reg | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++---------------------+-----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    60|
+|2     |LUT1     |     5|
+|3     |LUT2     |    90|
+|4     |LUT3     |   105|
+|5     |LUT4     |   102|
+|6     |LUT5     |    60|
+|7     |LUT6     |   276|
+|8     |MUXCY_L  |     3|
+|9     |RAMB36E1 |     4|
+|10    |SRL16E   |    13|
+|11    |XORCY    |     4|
+|12    |FDCE     |     9|
+|13    |FDR      |     9|
+|14    |FDRE     |  1060|
+|15    |FDSE     |     6|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------------------------------------------------------------------+------------------------------------------------------------+------+
+|      |Instance                                                                      |Module                                                      |Cells |
++------+------------------------------------------------------------------------------+------------------------------------------------------------+------+
+|1     |top                                                                           |                                                            |  1806|
+|2     |  U0                                                                          |AXITDC                                                      |  1806|
+|3     |    AXI_control                                                               |axi_gpio_0                                                  |   119|
+|4     |      U0                                                                      |axi_gpio                                                    |   119|
+|5     |        AXI_LITE_IPIF_I                                                       |axi_lite_ipif                                               |    75|
+|6     |          I_SLAVE_ATTACHMENT                                                  |slave_attachment                                            |    75|
+|7     |            I_DECODER                                                         |address_decoder                                             |    25|
+|8     |              \MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f                                                   |     1|
+|9     |              \MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized1                                   |     1|
+|10    |        gpio_core_1                                                           |GPIO_Core                                                   |    39|
+|11    |          \Dual.INPUT_DOUBLE_REGS4                                            |cdc_sync                                                    |     8|
+|12    |    AXI_memory                                                                |axi_bram_ctrl_0                                             |   533|
+|13    |      U0                                                                      |axi_bram_ctrl                                               |   533|
+|14    |        \gext_inst.abcv4_0_ext_inst                                           |axi_bram_ctrl_top                                           |   533|
+|15    |          \GEN_AXI4.I_FULL_AXI                                                |full_axi                                                    |   533|
+|16    |            \GEN_ARB.I_SNG_PORT                                               |sng_port_arb                                                |    28|
+|17    |            I_RD_CHNL                                                         |rd_chnl                                                     |   313|
+|18    |              I_WRAP_BRST                                                     |wrap_brst_3                                                 |    54|
+|19    |            I_WR_CHNL                                                         |wr_chnl                                                     |   173|
+|20    |              BID_FIFO                                                        |SRL_FIFO                                                    |    50|
+|21    |              I_WRAP_BRST                                                     |wrap_brst                                                   |    37|
+|22    |    BRAM                                                                      |blk_mem_gen_0                                               |     4|
+|23    |      U0                                                                      |blk_mem_gen_v8_4_1                                          |     4|
+|24    |        inst_blk_mem_gen                                                      |blk_mem_gen_v8_4_1_synth                                    |     4|
+|25    |          \gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen              |blk_mem_gen_v8_4_1_blk_mem_gen_top                          |     4|
+|26    |            \valid.cstr                                                       |blk_mem_gen_v8_4_1_blk_mem_gen_generic_cstr                 |     4|
+|27    |              \ramloop[0].ram.r                                               |blk_mem_gen_v8_4_1_blk_mem_gen_prim_width                   |     1|
+|28    |                \prim_noinit.ram                                              |blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper                 |     1|
+|29    |              \ramloop[1].ram.r                                               |blk_mem_gen_v8_4_1_blk_mem_gen_prim_width__parameterized0   |     1|
+|30    |                \prim_noinit.ram                                              |blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized0 |     1|
+|31    |              \ramloop[2].ram.r                                               |blk_mem_gen_v8_4_1_blk_mem_gen_prim_width__parameterized1   |     1|
+|32    |                \prim_noinit.ram                                              |blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized1 |     1|
+|33    |              \ramloop[3].ram.r                                               |blk_mem_gen_v8_4_1_blk_mem_gen_prim_width__parameterized2   |     1|
+|34    |                \prim_noinit.ram                                              |blk_mem_gen_v8_4_1_blk_mem_gen_prim_wrapper__parameterized2 |     1|
+|35    |    TDC                                                                       |TDCchannel                                                  |  1142|
+|36    |      Delay_line                                                              |delayLine                                                   |   435|
+|37    |        RED                                                                   |risingEdgeDetector                                          |     2|
+|38    |      control                                                                 |control                                                     |   167|
+|39    |      counter                                                                 |counter                                                     |    31|
+|40    |      encoder                                                                 |encoder                                                     |   509|
+|41    |        Adder_tree                                                            |adderTreeLegacy                                             |   404|
+|42    |          \RECURSE.NEXT_LEVEL                                                 |adderTreeLegacy__parameterized0                             |   244|
+|43    |            \RECURSE.NEXT_LEVEL                                               |adderTreeLegacy__parameterized1                             |   132|
+|44    |              \RECURSE.NEXT_LEVEL                                             |adderTreeLegacy__parameterized2                             |    64|
+|45    |                \RECURSE.NEXT_LEVEL                                           |adderTreeLegacy__parameterized3                             |    24|
+|46    |    sync_0                                                                    |sync                                                        |     2|
+|47    |    sync_1                                                                    |sync_0                                                      |     2|
+|48    |    sync_2                                                                    |sync_1                                                      |     2|
+|49    |    sync_3                                                                    |sync_2                                                      |     2|
++------+------------------------------------------------------------------------------+------------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 883.879 ; gain = 533.074
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 257 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:44 . Memory (MB): peak = 883.879 ; gain = 504.461
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 883.879 ; gain = 533.074
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 1 instances
+  FDR => FDRE: 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+399 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 884.652 ; gain = 542.340
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'F:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.runs/TDCsystem_AXITDC_1_0_synth_1/TDCsystem_AXITDC_1_0.dcp' has been generated.

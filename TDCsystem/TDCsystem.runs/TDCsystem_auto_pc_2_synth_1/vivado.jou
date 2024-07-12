@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Jul 13 06:59:31 2024
+# Process ID: 27924
+# Current directory: F:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.runs/TDCsystem_auto_pc_2_synth_1
+# Command line: vivado.exe -log TDCsystem_auto_pc_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TDCsystem_auto_pc_2.tcl
+# Log file: F:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.runs/TDCsystem_auto_pc_2_synth_1/TDCsystem_auto_pc_2.vds
+# Journal file: F:/Users/wen02/Documents/GitHub/zynq_tdc/TDCsystem/TDCsystem.runs/TDCsystem_auto_pc_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source TDCsystem_auto_pc_2.tcl -notrace
